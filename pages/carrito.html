@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Assets/Logo.png">
+    <title>Esencia de Agua</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style/style.css">   
+</head>
+<body class="bg-[#9eb1d0]">
+    <!--Navbar-->
+    <nav class="w-full sticky top-0 z-20 border-b border-gray-200 dark:border-gray-600 bg-[#0D47A1] z-50">
+        <div class="max-w-screen-xl container-fluid flex flex-wrap items-center justify-between mx-auto px-4 md:px-0 md:py-4">
+            <a href="/pages/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/Assets/Logo.png" class="h-8" alt="Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Esencia de Agua</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center">
+                <a href="/pages/carrito.html" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 flex justify-center items-center cursor-pointer">
+                  <img src="/Assets/carrito-de-compras.png" width="40px" alt="Carrito" style="filter: invert(1);">  
+                </a>
+                
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-12 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-white focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-[#0D47A1] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="/pages/index.html" class="block py-2 px-3 text-white rounded-md hover:bg-blue-900 md:bg-transparent md:p-2">Página Principal</a>
+                    </li>
+                    <li>
+                        <a href="/pages/products.html" class="block py-2 px-3 text-white rounded-md hover:bg-blue-900 md:p-2">Productos</a>
+                    </li>
+                    <li>
+                        <a href="/pages/index.html#contacto" class="block py-2 px-3 text-white rounded-md hover:bg-blue-900 md:p-2">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="lg:grid lg:grid-cols-5 gap-6 p-4 mx-auto flex flex-col items-center">
+        <!-- Sección de Productos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 flex-1 col-span-4 items-center">
+            
+            <div class="w-full max-w-sm rounded-lg shadow-sm bg-[#1f618d]">    
+                <img class="p-8 rounded-[15%]" src="/Assets/agua_alcalina.webp" alt="Garrafon Alcalina"/>
+                <div class="px-5 pb-5 flex flex-col items-center">
+                    <h5 class="text-2xl text-center font-bold tracking-tight text-white mb-4">Garrafon Alcalina</h5>
+                    <span class="text-xl text-center font-bold text-white mb-3">$34.99</span>
+                    <div class="flex gap-4">
+                        <input type="number" min="0" value="0" class="w-15 text-center border rounded-md">
+                        <div class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Add to cart</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full max-w-sm rounded-lg shadow-sm bg-[#1f618d]">    
+                <img class="p-8 rounded-[15%]" src="/Assets/botella_alcalina.webp" alt="Botella Alcalina"/>
+                <div class="px-5 pb-5 flex flex-col items-center">
+                    <h5 class="text-2xl text-center font-bold tracking-tight text-white mb-4">Botella Alcalina</h5>
+                    <span class="text-xl text-center font-bold text-white mb-3">$10.99</span>
+                    <div class="flex gap-4">
+                        <input type="number" min="0" value="0" class="w-15 text-center border rounded-md">
+                        <div class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full max-w-sm rounded-lg shadow-sm bg-[#1f618d]">    
+                <img class="p-8 rounded-[15%]" src="/Assets/agua.png" alt="product image"/>
+                <div class="px-5 pb-5 flex flex-col items-center">
+                    <h5 class="text-2xl text-center font-bold tracking-tight text-white mb-4">Agua Purificada</h5>
+                    <span class="text-xl text-center font-bold text-white mb-3">$29.99</span>
+                    <div class="flex gap-4">
+                        <input type="number" min="0" value="0" class="w-15 text-center border rounded-md">
+                        <div class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full max-w-sm rounded-lg shadow-sm bg-[#1f618d]">    
+                <img class="p-8 rounded-[15%]" src="/Assets/bolsa-hielo-01.png" alt="Bolsa de Hielos"/>
+                <div class="px-5 pb-5 flex flex-col items-center">
+                    <h5 class="text-2xl text-center font-bold tracking-tight text-white mb-4">Bolsa de Hielos</h5>
+                    <span class="text-xl text-center font-bold text-white mb-3">$9.99</span>
+                    <div class="flex gap-4">
+                        <input type="number" min="0" value="0" class="w-15 text-center border rounded-md">
+                        <div class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Checkout -->
+        <div class="bg-[#2980b9] p-6 rounded-lg shadow-md w-full lg:w-1/5 text-center flex flex-col items-center justify-center">
+            <h2 class="text-lg font-semibold mb-4 text-white">Carrito de Compras</h2>
+            <div class="border-b pb-4">
+                <p class="text-white">Bolsa de Hielo:
+                <br>Qty: 2 - $29 </p>
+                <p class="text-white">Agua Purificada: <br> Qty: 1 - $29.99</p>
+            </div>
+            <p class="text-white text-xl font-semibold mt-4">Total: $14.50</p>
+            <button class="w-full mt-4 bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800">Proceder con Compra</button>
+        </div>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> 
+</body>
+</html>
